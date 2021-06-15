@@ -30,15 +30,14 @@ installFlux() {
     exit 1
   fi
   flux bootstrap github \
-    --owner=billimek \
+    --owner=miethe \
     --repository=k8s-gitops \
-    --branch master \
+    --branch main \
     --private=false \
-    --validation=none \
     --personal
 
   FLUX_INSTALLED=$?
-  if [ $FLUX_INSTALLED != 0 ]; then 
+  if [ $FLUX_INSTALLED != 0 ]; then
     echo -e "flux did not install correctly, aborting!"
     exit 1
   fi
