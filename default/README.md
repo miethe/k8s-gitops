@@ -65,15 +65,6 @@ S3-compatible bucket storage service
 
 * [monica.yaml](monica/monica.yaml)
 
-# node-red
-
-![](https://i.imgur.com/ABTbYw1.png)
-
-Rules-engine for automations
-
-* [node-red.yaml](node-red/node-red.yaml)
-* Node-Red configuration is persisted to a [configuration repo](https://github.com/billimek/node-red-config)
-
 # nzbget
 
 ![](https://i.imgur.com/2KQbi2w.png)

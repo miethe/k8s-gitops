@@ -28,13 +28,13 @@ spec:
         annotations:
           kubernetes.io/ingress.class: "nginx"
         hosts:
-        - host: sonarr.eviljungle.com
+        - host: sonarr.miethe.us
           paths:
           - path: /
             pathType: Prefix
         tls:
         - hosts:
-          - "sonarr.eviljungle.com"
+          - "sonarr.miethe.us"
     podAnnotations:
       backup.velero.io/backup-volumes: config
     persistence:

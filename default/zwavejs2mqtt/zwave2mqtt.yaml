@@ -32,16 +32,16 @@ spec:
       enabled: true
       annotations:
         kubernetes.io/ingress.class: "nginx"
-        nginx.ingress.kubernetes.io/auth-url: "https://auth.eviljungle.com/oauth2/auth"
-        nginx.ingress.kubernetes.io/auth-signin: https://auth.eviljungle.com/oauth2/start
+        nginx.ingress.kubernetes.io/auth-url: "https://auth.miethe.us/oauth2/auth"
+        nginx.ingress.kubernetes.io/auth-signin: https://auth.miethe.us/oauth2/start
       hosts:
-      - host: "z.eviljungle.com"
+      - host: "z.miethe.us"
         paths:
         - path: /
           pathType: Prefix
       tls:
       - hosts:
-        - "z.eviljungle.com"
+        - "z.miethe.us"
     persistence:
       config:
         enabled: true
