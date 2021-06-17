@@ -30,7 +30,7 @@ spec:
           region: us-east-1
           s3ForcePathStyle: true
           s3Url: http://minio.default.svc:9000
-          publicUrl: https://minio.eviljungle.com
+          publicUrl: https://minio.miethe.us
       volumeSnapshotLocation:
         name: aws
         config:

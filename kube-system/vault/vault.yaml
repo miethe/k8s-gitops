@@ -19,8 +19,8 @@ spec:
   values:
     server:
       dataStorage:
-        enabled: true
-        storageClass: "rook-ceph-block"
+        enabled: false
+#        storageClass: "rook-ceph-block"
       extraEnvironmentVars:
         GOOGLE_APPLICATION_CREDENTIALS: /vault/userconfig/kms-vault/account.json
       extraVolumes:
@@ -30,8 +30,8 @@ spec:
       tolerations: |
         - key: "arm"
           operator: "Exists"
-      annotations:
-        backup.velero.io/backup-volumes: data
+#      annotations:
+#        backup.velero.io/backup-volumes: data
       resources:
         requests:
           memory: 256Mi

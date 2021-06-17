@@ -64,13 +64,13 @@ spec:
         pathType: Prefix
         annotations:
           kubernetes.io/ingress.class: "nginx"
-          nginx.ingress.kubernetes.io/auth-url: "https://auth.eviljungle.com/oauth2/auth"
-          nginx.ingress.kubernetes.io/auth-signin: https://auth.eviljungle.com/oauth2/start
+          nginx.ingress.kubernetes.io/auth-url: "https://auth.miethe.us/oauth2/auth"
+          nginx.ingress.kubernetes.io/auth-signin: https://auth.miethe.us/oauth2/start
         hosts:
-        - prom-alert.eviljungle.com
+        - prom-alert.miethe.us
         tls:
         - hosts:
-          - prom-alert.eviljungle.com
+          - prom-alert.miethe.us
       config:
         global:
           resolve_timeout: 5m
@@ -142,13 +142,13 @@ spec:
         pathType: Prefix
         annotations:
           kubernetes.io/ingress.class: "nginx"
-          nginx.ingress.kubernetes.io/auth-url: "https://auth.eviljungle.com/oauth2/auth"
-          nginx.ingress.kubernetes.io/auth-signin: https://auth.eviljungle.com/oauth2/start
+          nginx.ingress.kubernetes.io/auth-url: "https://auth.miethe.us/oauth2/auth"
+          nginx.ingress.kubernetes.io/auth-signin: https://auth.miethe.us/oauth2/start
         hosts:
-        - prom-server.eviljungle.com
+        - prom-server.miethe.us
         tls:
         - hosts:
-          - prom-server.eviljungle.com
+          - prom-server.miethe.us
       prometheusSpec:
         # image:
         #   repository: quay.io/prometheus/prometheus

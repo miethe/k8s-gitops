@@ -13,9 +13,9 @@ metadata:
 spec:
   tls:
    - hosts:
-     - rook.eviljungle.com
+     - rook.miethe.us
   rules:
-  - host: rook.eviljungle.com
+  - host: rook.miethe.us
     http:
       paths:
       - path: /

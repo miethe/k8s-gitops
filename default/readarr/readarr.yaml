@@ -30,13 +30,13 @@ spec:
         annotations:
           kubernetes.io/ingress.class: "nginx"
         hosts:
-        - host: readarr.eviljungle.com
+        - host: readarr.miethe.us
           paths:
           - path: /
             pathType: Prefix
         tls:
         - hosts:
-          - "readarr.eviljungle.com"
+          - "readarr.miethe.us"
     podAnnotations:
       backup.velero.io/backup-volumes: config
     persistence:

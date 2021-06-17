@@ -63,7 +63,7 @@ spec:
       maxTickTime: -1
       serviceType: LoadBalancer
       gameMode: survival
-      motd: "mcsv.eviljungle.com\n\u00A76\u00A7lsurvival\u00A7r\u00A7l - \u00A7r\u00A7c\u00A7lHARDCORE\u00A7r\n"
+      motd: "mcsv.miethe.us\n\u00A76\u00A7lsurvival\u00A7r\u00A7l - \u00A7r\u00A7c\u00A7lHARDCORE\u00A7r\n"
       icon: https://www.freeiconspng.com/uploads/minecraft-server-icon-23.png
       loadBalancerIP: 10.0.6.102
       rcon:
@@ -84,11 +84,11 @@ spec:
               kubernetes.io/ingress.class: nginx
               nginx.ingress.kubernetes.io/whitelist-source-range: "10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16"
             hosts:
-              - name: mcsv-map.eviljungle.com
+              - name: mcsv-map.miethe.us
                 path: /
             tls:
             - hosts:
-              - mcsv.eviljungle.com
+              - mcsv.miethe.us
         - name: geyser
           containerPort: 19132
           protocol: UDP
