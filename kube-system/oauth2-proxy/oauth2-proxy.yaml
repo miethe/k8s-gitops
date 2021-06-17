@@ -27,18 +27,18 @@ spec:
     ingress:
       enabled: true
       path: /oauth2
-      hosts: [auth.eviljungle.com]
+      hosts: [auth.miethe.us]
       tls:
       - hosts:
-        - auth.eviljungle.com
+        - auth.miethe.us
     extraArgs:
       provider: oidc
-      oidc-issuer-url: https://billimek.auth0.com/
+      oidc-issuer-url: https://miethe.auth0.com/
       skip-provider-button:
       pass-authorization-header:
       email-domain: "*"
-      cookie-domain: .eviljungle.com
-      whitelist-domain: .eviljungle.com
+      cookie-domain: .miethe.us
+      whitelist-domain: .miethe.us
   valuesFrom:
   - kind: Secret
     name: "oauth2-proxy-helm-values"

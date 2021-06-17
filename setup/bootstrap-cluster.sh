@@ -20,7 +20,7 @@ installFlux() {
   message "installing fluxv2"
   flux check --pre > /dev/null
   FLUX_PRE=$?
-  if [ $FLUX_PRE != 0 ]; then 
+  if [ $FLUX_PRE != 0 ]; then
     echo -e "flux prereqs not met:\n"
     flux check --pre
     exit 1
@@ -34,6 +34,7 @@ installFlux() {
     --repository=k8s-gitops \
     --branch main \
     --private=false \
+    --validation=none \
     --personal
 
   FLUX_INSTALLED=$?
